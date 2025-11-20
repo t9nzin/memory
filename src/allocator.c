@@ -82,7 +82,6 @@ void coalesce_block(struct block_meta *block) {
 }
 
 void *malloc(size_t size) {
-   printf("using my malloc!");
     struct block_meta *block; 
 
     if (size == 0 ) {
@@ -148,7 +147,6 @@ void *calloc(size_t n, size_t size) {
 }
 
 void *realloc(void *ptr, size_t size) {
-   printf("using my realloc!");
    if (!ptr) {
       return malloc(size); 
    }
@@ -186,7 +184,6 @@ void *realloc(void *ptr, size_t size) {
 }
 
 void free(void* ptr) {
-   printf("hey there!");
    if (!ptr) {                            
       return;
    }
