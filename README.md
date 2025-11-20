@@ -6,15 +6,6 @@ A custom implementation of malloc, calloc, realloc, and free in C, featuring blo
 
 This project implements a memory allocator from scratch using `sbrk` for small allocations and `mmap` for large allocations. It includes optimizations like block splitting to reduce fragmentation and coalescing to merge adjacent free blocks. I've also written a blog post (~20 minute read) explaining step by step the process behind writing this memory allocator project, if that's of interest, you can read it here!
 
-## Features
-
-- Custom implementations of malloc, calloc, realloc, and free
-- First-fit allocation strategy with free list management
-- Block splitting to minimize internal fragmentation
-- Block coalescing to merge adjacent free blocks
-- Automatic switching to mmap for allocations >= 128KB
-- Memory alignment to pointer size boundaries
-
 ## Building
 
 ### Prerequisites
