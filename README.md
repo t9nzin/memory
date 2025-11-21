@@ -1,6 +1,6 @@
 # Custom Memory Allocator
 
-A custom implementation of malloc, calloc, realloc, and free in C, featuring block splitting, coalescing, and efficient memory management.
+A custom implementation of malloc, calloc, realloc, and free in C.
 
 ## Overview
 
