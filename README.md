@@ -106,4 +106,4 @@ Contributions are welcome. Please open an issue or submit a pull request.
 ## Acknowledgements
 I credit [Dan Luu](https://danluu.com) for his fantastic malloc() tutorial which I greatly enjoyed reading and served as a helpful reference for this project. If you would like to take a look at his tutorial (which I highly recommend), you can find it [here](https://danluu.com/malloc-tutorial).
 
-I'd also like to thank [Joshua Zhou](https://www.linkedin.com/in/joshuazhou1/) and [Abdul Fatir](https://www.linkedin.com/in/abdul-fatir-/) for reading over and giving me great feedback on the accompanying blog post for this project.
+I'd also like to thank Joshua Zhou and Abdul Fatir for reading over and giving me great feedback on the accompanying blog post for this project.
