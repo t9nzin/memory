@@ -101,7 +101,7 @@ MIT License :D
 Contributions are welcome. Please open an issue or submit a pull request.
 
 ## Author
-@t9nzin 
+[@t9nzin](https://github.com/t9nzin) 
 
 ## Acknowledgements
 I credit [Dan Luu](https://danluu.com) for his fantastic malloc() tutorial which I greatly enjoyed reading and served as a helpful reference for this project. If you would like to take a look at his tutorial (which I highly recommend), you can find it [here](https://danluu.com/malloc-tutorial).
