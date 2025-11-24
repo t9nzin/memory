@@ -1,6 +1,6 @@
 # memory
 
-A memory allocator written from scratch using `sbrk` for small allocations and `mmap` for large allocations. It includes optimizations like block splitting to reduce fragmentation and coalescing to merge adjacent free blocks. Please note that this allocator is **not thread-safe**. Concurrent calls to malloc/free/realloc will cause undefined behavior. I've also written a blog post (~20 minute read) explaining step by step the process behind writing this memory allocator project, if that's of interest, you can read it [here!](https://medium.com/@tenzinmigmar/malloc-from-scratch-dbc1bc23dfde)
+A memory allocator written from scratch using `sbrk` for small allocations and `mmap` for large allocations. It includes optimizations like block splitting to reduce fragmentation and coalescing to merge adjacent free blocks. Please note that this allocator is **not thread-safe**. Concurrent calls to malloc/free/realloc will cause undefined behavior. I've also written a blog post (~20 minute read) explaining step by step the process behind writing this memory allocator project, if that's of interest, you can read it [here!](https://medium.com/@tenz1n/malloc-from-scratch-dbc1bc23dfde)
 
 ## Building
 
