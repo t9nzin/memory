@@ -1,10 +1,6 @@
-# Custom Memory Allocator
+# memory
 
-A custom implementation of malloc, calloc, realloc, and free in C.
-
-## Overview
-
-This project implements a memory allocator from scratch using `sbrk` for small allocations and `mmap` for large allocations. It includes optimizations like block splitting to reduce fragmentation and coalescing to merge adjacent free blocks. Please note that this allocator is **not thread-safe**. Concurrent calls to malloc/free/realloc will cause undefined behavior. I've also written a blog post (~20 minute read) explaining step by step the process behind writing this memory allocator project, if that's of interest, you can read it [here!](https://medium.com/@tenzinmigmar/malloc-from-scratch-dbc1bc23dfde)
+A memory allocator written from scratch using `sbrk` for small allocations and `mmap` for large allocations. It includes optimizations like block splitting to reduce fragmentation and coalescing to merge adjacent free blocks. Please note that this allocator is **not thread-safe**. Concurrent calls to malloc/free/realloc will cause undefined behavior. I've also written a blog post (~20 minute read) explaining step by step the process behind writing this memory allocator project, if that's of interest, you can read it [here!](https://medium.com/@tenzinmigmar/malloc-from-scratch-dbc1bc23dfde)
 
 ## Building
 
@@ -44,29 +40,6 @@ make bench     # run benchmark
     ```bash
     ./my_program
     ```
-
-### Example
-
-```c
-#include <stdio.h>
-#include "allocator.h"
-
-int main() {
-    int *arr = malloc(10 * sizeof(int));
-    if (arr == NULL) {
-        return 1;
-    }
-    
-    for (int i = 0; i < 10; i++) {
-        arr[i] = i;
-    }
-    
-    arr = realloc(arr, 20 * sizeof(int));
-    
-    free(arr);
-    return 0;
-}
-```
 
 ## Project Structure
 
